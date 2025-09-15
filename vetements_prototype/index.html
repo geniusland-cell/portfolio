@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mode Africaine Élégance - Vêtements Traditionnels</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo"><i class="fas fa-tshirt"></i></div>
+        <div class="boutique-name">Mode Africaine Élégance</div>
+      </div>
+      <div class="tagline">Vêtements Traditionnels et Modernes</div>
+    </header>
+
+    <div class="container">
+      <div class="hero">
+        <h2>Découvrez notre Collection Africaine</h2>
+        <p>
+          Des vêtements élégants qui célèbrent la richesse culturelle de
+          l'Afrique.
+        </p>
+        <a href="#products" class="cta-button">Voir la Collection</a>
+      </div>
+
+      <h2 class="section-title" id="products">Notre Collection</h2>
+
+      <div class="category-filter">
+        <button class="filter-btn active" data-category="all">
+          Tous les produits
+        </button>
+        <button class="filter-btn" data-category="homme">Homme</button>
+        <button class="filter-btn" data-category="femme">Femme</button>
+        <button class="filter-btn" data-category="enfant">Enfant</button>
+        <button class="filter-btn" data-category="accessoire">
+          Accessoires
+        </button>
+      </div>
+
+      <div class="products" id="products-container">
+        <!-- Les produits seront chargés dynamiquement par JavaScript -->
+      </div>
+
+      <div class="pagination" id="pagination">
+        <!-- La pagination sera générée par JavaScript -->
+      </div>
+
+      <div class="info-section">
+        <h3>Horaires d'Ouverture</h3>
+        <ul class="hours-list">
+          <li><span>Lundi - Vendredi:</span> 09h00 - 19h00</li>
+          <li><span>Samedi:</span> 09h00 - 20h00</li>
+          <li><span>Dimanche:</span> 10h00 - 16h00</li>
+        </ul>
+      </div>
+
+      <div class="info-section">
+        <h3>Comment Commander</h3>
+        <p>1. Parcourez notre collection et choisissez vos articles préférés</p>
+        <p>2. Sélectionnez votre taille pour chaque article</p>
+        <p>3. Cliquez sur "Acheter sur WhatsApp" pour l'article désiré</p>
+        <p>4. Vous serez redirigé vers WhatsApp avec un message pré-rempli</p>
+        <p>5. Envoyez le message et précisez votre adresse de livraison</p>
+        <p>6. Nous confirmons votre commande et vous livrons rapidement!</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Mode Africaine Élégance</h3>
+        <p>Vêtements Traditionnels et Modernes</p>
+        <p>Brazzaville, Congo | Tel: +242 06 767 81 28</p>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <a href="https://wa.me/242067678128" class="whatsapp-contact">
+          <i class="fab fa-whatsapp"></i> Nous contacter sur WhatsApp
+        </a>
+
+        <p>&copy; 2023 Mode Africaine Élégance. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
