@@ -516,11 +516,12 @@ const plats = [
     icon: "fas fa-apple-alt",
   },
 ];
-
+// Variables globales
 let currentPage = 1;
 const itemsPerPage = 9;
 let currentCategory = "all";
 
+// Fonction pour afficher les plats
 function displayPlats(platsToShow, page = 1) {
   const menuContainer = document.getElementById("menu-container");
   menuContainer.innerHTML = "";
@@ -539,9 +540,8 @@ function displayPlats(platsToShow, page = 1) {
     const platElement = document.createElement("div");
     platElement.className = "menu-item";
     platElement.innerHTML = `
-      
             <div class="menu-image">
-                <img src="${plat.image}" alt="${plat.nom}"> 
+                <img src="${plat.image}" alt="${plat.nom}">
             </div>
             <div class="menu-content">
                 <h3>${plat.nom}</h3>
@@ -577,7 +577,6 @@ function setupPagination(platsToShow, page) {
     prevButton.addEventListener("click", () => {
       currentPage = page - 1;
       displayPlats(platsToShow, currentPage);
-      window.scrollTo({ top: 0, behavior: "smooth" });
     });
     paginationElement.appendChild(prevButton);
   }
@@ -590,7 +589,6 @@ function setupPagination(platsToShow, page) {
     pageButton.addEventListener("click", () => {
       currentPage = i;
       displayPlats(platsToShow, currentPage);
-      window.scrollTo({ top: 0, behavior: "smooth" });
     });
     paginationElement.appendChild(pageButton);
   }
@@ -603,7 +601,6 @@ function setupPagination(platsToShow, page) {
     nextButton.addEventListener("click", () => {
       currentPage = page + 1;
       displayPlats(platsToShow, currentPage);
-      window.scrollTo({ top: 0, behavior: "smooth" });
     });
     paginationElement.appendChild(nextButton);
   }
@@ -642,7 +639,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Gestion du défilement fluide
+  // Gestion du défilement fluide pour les ancres
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
