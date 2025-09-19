@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioInteractif Congo - Plateforme éducative</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-microscope"></i>
+          <h1>BioInteractif Congo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="nav-link active" data-section="accueil"
+                >Accueil</a
+              >
+            </li>
+            <li><a href="#" class="nav-link" data-section="cours">Cours</a></li>
+            <li>
+              <a href="#" class="nav-link" data-section="videos">Vidéos</a>
+            </li>
+            <li><a href="#" class="nav-link" data-section="quiz">Quiz</a></li>
+            <li><a href="#" class="nav-link" data-section="jeux">Jeux</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="accueil" class="section active">
+        <div class="hero">
+          <h2>Bienvenue sur BioInteractif Congo</h2>
+          <p>
+            Plateforme éducative interactive destinée aux étudiants de première
+            année de biologie de l'Université Marien-Ngouabi. Notre mission est
+            de rendre l'apprentissage plus clair, interactif et accessible.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-card">
+            <i class="fas fa-book"></i>
+            <h3>Cours Complets</h3>
+            <p>
+              Accédez à l'ensemble du programme de L1 Biologie avec des contenus
+              structurés et simplifiés.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-video"></i>
+            <h3>Vidéos Explicatives</h3>
+            <p>
+              Regardez des vidéos pédagogiques qui expliquent les concepts
+              complexes de manière visuelle.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-question-circle"></i>
+            <h3>Quiz Interactifs</h3>
+            <p>
+              Testez vos connaissances avec des quiz corrigés après chaque
+              chapitre.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-gamepad"></i>
+            <h3>Jeux Éducatifs</h3>
+            <p>
+              Apprenez en vous amusant avec des jeux conçus pour illustrer les
+              concepts difficiles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cours" class="section">
+        <h2>Unités d'Enseignement et Cours</h2>
+        <p>
+          Parcourez les différentes matières du programme organisées par
+          semestre.
+        </p>
+
+        <div class="semester-tabs">
+          <button class="tab-button active" data-semester="sem1">
+            Semestre 1
+          </button>
+          <button class="tab-button" data-semester="sem2">Semestre 2</button>
+        </div>
+
+        <div class="semester-content active" id="sem1">
+          <div class="subjects">
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-flask"></i>
+                <h3>Chimie Générale Physique (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Réaction et Structure de la Matière</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Structure atomique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Liaisons chimiques <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Cinétique chimique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-calculator"></i>
+                <h3>Mathématiques (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Algèbre et Analyse</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Fonctions et limites <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Dérivées et intégrales <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Algèbre linéaire <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-dna"></i>
+                <h3>Biologie Cellulaire et Moléculaire (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Biologie Cellulaire et Moléculaire</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Structure cellulaire <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Métabolisme cellulaire <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Expression génétique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-dna"></i>
+                <h3>Génétique formelle (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Les Lois de Mendel et la Génétique</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Hérédité mendélienne <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Gènes et allèles <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Cartographie génétique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-mountain"></i>
+                <h3>Géologie (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Pétrominéralogie et Géodynamique</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Minéralogie <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Pétrologie <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Processus géodynamiques <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="semester-content" id="sem2">
+          <div class="subjects">
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-atom"></i>
+                <h3>Physique (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>
+                  Cours : Optique, Mécanique, Électricité et Thermodynamique
+                </h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Optique géométrique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Mécanique classique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Électromagnétisme <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Thermodynamique <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-vial"></i>
+                <h3>Chimie (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>Cours : Chimie Organique et d'extraction</h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Fonctions organiques <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Stéréochimie <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Méthodes d'extraction <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subject-card">
+              <div class="subject-header">
+                <i class="fas fa-leaf"></i>
+                <h3>Biologie Spécialisée (UE)</h3>
+              </div>
+              <div class="subject-content">
+                <h4>
+                  Cours : Physiologie animale, Physiologie végétale, Botanique,
+                  Immunologie
+                </h4>
+                <ul class="chapters-list">
+                  <li>
+                    <a href="#"
+                      >Physiologie animale <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Physiologie végétale <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Anatomie végétale <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Système immunitaire <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="section">
+        <h2>Vidéos Explicatives</h2>
+        <p>
+          Regardez ces vidéos pour mieux comprendre les concepts clés du
+          programme.
+        </p>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="video-info">
+              <h3>La structure de la cellule</h3>
+              <p>
+                Cette vidéo explique en détail les différents organites
+                cellulaires et leurs fonctions.
+              </p>
+              <a href="#" class="button">Regarder</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="video-info">
+              <h3>Le processus de la mitose</h3>
+              <p>
+                Visualisez les différentes étapes de la division cellulaire
+                mitotique.
+              </p>
+              <a href="#" class="button">Regarder</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="video-info">
+              <h3>La synthèse des protéines</h3>
+              <p>
+                Comprenez les mécanismes de transcription et traduction de
+                l'ADN.
+              </p>
+              <a href="#" class="button">Regarder</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="section">
+        <h2>Quiz Interactifs</h2>
+        <p>
+          Testez vos connaissances avec ces quiz interactifs. Des explications
+          détaillées sont fournies pour chaque réponse.
+        </p>
+
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <h3>Quiz : Biologie Cellulaire</h3>
+            <p>Question 1 sur 5</p>
+          </div>
+
+          <div class="question">
+            <p>
+              Quel organite est responsable de la production d'ATP dans la
+              cellule ?
+            </p>
+          </div>
+
+          <div class="options">
+            <div class="option">A. Appareil de Golgi</div>
+            <div class="option">B. Réticulum endoplasmique</div>
+            <div class="option">C. Mitochondrie</div>
+            <div class="option">D. Lysosome</div>
+          </div>
+
+          <div class="quiz-nav">
+            <button class="button">Question précédente</button>
+            <button class="button primary">Valider et continuer</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="jeux" class="section">
+        <h2>Jeux Éducatifs</h2>
+        <p>
+          Renforcez vos connaissances grâce à ces jeux interactifs conçus pour
+          illustrer les concepts difficiles.
+        </p>
+
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-placeholder">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <div class="game-info">
+              <h3>Organites Cellulaires</h3>
+              <p>Associez chaque organite à sa fonction dans la cellule.</p>
+              <a href="#" class="button">Jouer</a>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-placeholder">
+              <i class="fas fa-sort-amount-down"></i>
+            </div>
+            <div class="game-info">
+              <h3>Processus de Mitose</h3>
+              <p>Ordonnez les différentes étapes de la division cellulaire.</p>
+              <a href="#" class="button">Jouer</a>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-placeholder">
+              <i class="fas fa-dna"></i>
+            </div>
+            <div class="game-info">
+              <h3>Structure de l'ADN</h3>
+              <p>
+                Reconstituez la double hélice d'ADN avec les bonnes paires de
+                bases.
+              </p>
+              <a href="#" class="button">Jouer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BioInteractif Congo</h3>
+          <p>
+            Plateforme éducative pour les étudiants de première année de
+            biologie de l'Université Marien-Ngouabi.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Université Marien-Ngouabi</p>
+          <p>Brazzaville, Congo</p>
+          <p>Email: geniusmampouya@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 BioInteractif Congo - Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
