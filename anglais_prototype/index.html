@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anglais Congo - Parlez anglais pour la vie quotidienne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h2>AnglaisCongo</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#profils">Profils</a></li>
+          <li><a href="#exercices">Exercices</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h1>Parlez Anglais pour <span>VOTRE Quotidien</span></h1>
+        <p>
+          Que vous soyez parent, étudiant, commerçant ou professionnel, apprenez
+          l'anglais utile pour votre vie en Afrique
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('parcours')">
+            Commencer à apprendre
+          </button>
+          <button class="btn-secondary" onclick="scrollToSection('profils')">
+            Voir mon profil
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours Universel Section -->
+    <section id="parcours" class="parcours">
+      <div class="container">
+        <h2>Parcours Principal <span>(Pour tous)</span></h2>
+        <p class="section-subtitle">
+          Suivez ces étapes progressives pour maîtriser l'anglais pratique
+        </p>
+
+        <div class="parcours-grid">
+          <!-- Niveau 1 -->
+          <div class="niveau-card" data-niveau="1">
+            <div class="niveau-header">
+              <span class="niveau-badge">Niveau 1</span>
+              <h3>Les Bases Indispensables</h3>
+            </div>
+            <div class="niveau-content">
+              <ul>
+                <li>✅ Salutations essentielles</li>
+                <li>✅ Se présenter simplement</li>
+                <li>✅ Ma famille proche</li>
+                <li>✅ Les nombres et couleurs</li>
+                <li>✅ Politesse de base</li>
+              </ul>
+              <button class="btn-niveau" onclick="startNiveau(1)">
+                Commencer ce niveau
+              </button>
+            </div>
+          </div>
+
+          <!-- Niveau 2 -->
+          <div class="niveau-card" data-niveau="2">
+            <div class="niveau-header">
+              <span class="niveau-badge">Niveau 2</span>
+              <h3>La Vie Quotidienne</h3>
+            </div>
+            <div class="niveau-content">
+              <ul>
+                <li>✅ Au marché et boutique</li>
+                <li>✅ Dans les transports</li>
+                <li>✅ Au restaurant</li>
+                <li>✅ À l'école/université</li>
+                <li>✅ Conversations simples</li>
+              </ul>
+              <button class="btn-niveau" onclick="startNiveau(2)">
+                Commencer ce niveau
+              </button>
+            </div>
+          </div>
+
+          <!-- Niveau 3 -->
+          <div class="niveau-card" data-niveau="3">
+            <div class="niveau-header">
+              <span class="niveau-badge">Niveau 3</span>
+              <h3>Conversations Approfondies</h3>
+            </div>
+            <div class="niveau-content">
+              <ul>
+                <li>✅ Vie professionnelle</li>
+                <li>✅ Débats et opinions</li>
+                <li>✅ Expressions idiomatiques</li>
+                <li>✅ Culture et proverbes</li>
+                <li>✅ Situations complexes</li>
+              </ul>
+              <button class="btn-niveau" onclick="startNiveau(3)">
+                Commencer ce niveau
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profils Section -->
+    <section id="profils" class="profils">
+      <div class="container">
+        <h2>Trouvez le contenu pour <span>VOTRE Profil</span></h2>
+        <p class="section-subtitle">
+          Accédez directement au vocabulaire utile pour votre situation
+        </p>
+
+        <div class="profils-grid">
+          <!-- Commerçant -->
+          <div class="profil-card" data-profil="commercant">
+            <div class="profil-icon">🛍️</div>
+            <h3>Commerçant/Marchand</h3>
+            <p>Vocabulaire marché, négociation, clients, prix</p>
+            <button class="btn-profil" onclick="selectProfil('commercant')">
+              Voir mon contenu
+            </button>
+          </div>
+
+          <!-- Étudiant -->
+          <div class="profil-card" data-profil="etudiant">
+            <div class="profil-icon">🎓</div>
+            <h3>Étudiant</h3>
+            <p>Vocabulaire école, études, vie étudiante</p>
+            <button class="btn-profil" onclick="selectProfil('etudiant')">
+              Voir mon contenu
+            </button>
+          </div>
+
+          <!-- Professionnel -->
+          <div class="profil-card" data-profil="professionnel">
+            <div class="profil-icon">👨‍💼</div>
+            <h3>Professionnel</h3>
+            <p>Vocabulaire bureau, réunions, business</p>
+            <button class="btn-profil" onclick="selectProfil('professionnel')">
+              Voir mon contenu
+            </button>
+          </div>
+
+          <!-- Parent -->
+          <div class="profil-card" data-profil="parent">
+            <div class="profil-icon">👨‍👩‍👧‍👦</div>
+            <h3>Parent/Famille</h3>
+            <p>Vocabulaire maison, enfants, éducation</p>
+            <button class="btn-profil" onclick="selectProfil('parent')">
+              Voir mon contenu
+            </button>
+          </div>
+
+          <!-- Chauffeur -->
+          <div class="profil-card" data-profil="chauffeur">
+            <div class="profil-icon">🚗</div>
+            <h3>Chauffeur/Transport</h3>
+            <p>Vocabulaire routes, directions, véhicules</p>
+            <button class="btn-profil" onclick="selectProfil('chauffeur')">
+              Voir mon contenu
+            </button>
+          </div>
+
+          <!-- Santé -->
+          <div class="profil-card" data-profil="sante">
+            <div class="profil-icon">🏥</div>
+            <h3>Santé</h3>
+            <p>Vocabulaire hôpital, médecins, symptômes</p>
+            <button class="btn-profil" onclick="selectProfil('sante')">
+              Voir mon contenu
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 AnglaisCongo - Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
