@@ -5,6 +5,13 @@
 [build.processing]
   skip_processing = true
 
+[build.environment]
+  NODE_VERSION = ""
+  NPM_VERSION = ""
+  PYTHON_VERSION = ""
+  RUBY_VERSION = ""
+  GO_VERSION = ""
+
 [[headers]]
   for = "/*"
   [headers.values]
